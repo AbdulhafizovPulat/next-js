@@ -5,6 +5,7 @@ import { navLinks } from "@/constants";
 import GlobalSearch from "./global-search";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import Mobile from "./mobile";
 
 const Header = () => {
   const pathName = usePathname();
@@ -32,6 +33,7 @@ const Header = () => {
         <div className="flex items-center gap-1">
           <GlobalSearch />
           <ToggleTheme />
+          <Mobile />
         </div>
       </div>
     </header>
